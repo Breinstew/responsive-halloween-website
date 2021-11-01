@@ -125,6 +125,7 @@ button{
 }
 
 .grid{
+  display: -ms-grid;
   display: grid;
 }
 
@@ -237,6 +238,7 @@ button{
 }
 
 .home__group {
+  display: -ms-grid;
   display: grid;
   position: relative;
   padding-top: 2rem;
@@ -368,7 +370,29 @@ button{
 }
 
 /*=============== CATEGORY ===============*/
+.category__conteiner {
+  -ms-grid-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+}
 
+.category__data {
+  text-align: center;
+}
+
+.category__img {
+  width: 120px;
+  margin-bottom: var(--mb-0-75);
+  transition: .3s;
+}
+
+.category__title {
+  margin-bottom: var(--mb-0-25);
+}
+
+.category__data:hover .category__img {
+  transform: translateY(-.5rem);
+}
 
 /*=============== ABOUT ===============*/
 
